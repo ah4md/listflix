@@ -46,9 +46,10 @@ export default function App() {
         try {
           setIsLoading(true);
           const res = await fetch(
-            `http://www.omdbapi.com/?s=${query}&apikey=98245f11`,
+            `https://www.omdbapi.com/?s=${query}&apikey=98245f11`,
             { signal: controller.signal }
           );
+
           if (!res.ok)
             throw new Error(
               "Oops! Unable to fetch movies at the moment. Please try again later."
