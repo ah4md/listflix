@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import StarRating from "./StarRating";
-import logo from "./assets/logo.svg";
 
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
@@ -175,7 +174,7 @@ function Logo() {
   return (
     <div className="logo">
       <span role="img">
-        <img src={logo} alt="ListFlix logo" />
+        <img src="/logo.svg" alt="ListFlix logo" />
       </span>
       <h1>ListFlix</h1>
     </div>
