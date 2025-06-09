@@ -370,3 +370,118 @@ body {
     transform: translateY(0);
   }
 }
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media only screen and (max-width: 1200px) {
+  .main {
+    flex-direction: column;
+    height: auto;
+    gap: 2.4rem;
+  }
+
+  .box {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 2.4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 1.6rem;
+  }
+
+  .nav-bar {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    height: auto;
+    padding: 1.6rem;
+    gap: 1.6rem;
+  }
+
+  .logo {
+    justify-self: center;
+  }
+
+  .search {
+    width: 100%;
+    max-width: 100%;
+    justify-self: center;
+  }
+
+  .num-results {
+    justify-self: center;
+    font-size: 1.4rem;
+  }
+
+  .details header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .details img {
+    width: 50%;
+    margin-bottom: 1.6rem;
+  }
+
+  .details section {
+    padding: 2rem;
+  }
+
+  .list li {
+    padding: 1.2rem 1.6rem;
+    grid-template-columns: 3rem 1fr;
+    column-gap: 1.6rem;
+    font-size: 1.6rem;
+  }
+
+  .summary {
+    padding: 1.6rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 56.25%; /* 9px */
+  }
+
+  .logo h1 {
+    font-size: 2.4rem;
+  }
+
+  .search {
+    font-size: 1.6rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .details img {
+    width: 70%;
+  }
+
+  .details-overview,
+  .rating {
+    padding: 1.6rem;
+  }
+
+  .btn-toggle {
+    height: 2rem;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+  .btn-back {
+    height: 2.8rem;
+    font-size: 2rem;
+  }
+}
+
+/* Prevent zooming on mobile input focus */
+@media screen and (max-width: 768px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
