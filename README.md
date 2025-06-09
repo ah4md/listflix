@@ -16,7 +16,7 @@
 
 ## 📸 Preview
 
-> https://ah4md.github.io/listflix/ 
+>https://listflix-theta.vercel.app/
 
 ---
 
